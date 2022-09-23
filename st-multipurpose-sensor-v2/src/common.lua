@@ -39,7 +39,7 @@ function common.axis_handler(axis_index, invert)
             -- if this is the Axis-index selected ein preferences and we're using as a garage door, send contact events
             if math.abs(value.value) > 900 then
                 device:emit_event(capabilities.contactSensor.contact.closed())
-            elseif math.abs(value.value) < 100 then
+            elseif math.abs(value.value) < 500 then
                 device:emit_event(capabilities.contactSensor.contact.open())
             end
         end
