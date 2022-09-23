@@ -63,9 +63,9 @@ multi_utils.axis_z_config_base = axis_z_config_base
 
 local handle_garage_event = function(device, value)
   local event
-  if value > 900 or value < -900 then
+  if value > 900 then
     event = capabilities.contactSensor.contact.closed()
-  elseif value >-100 and value < 100 then
+  elseif value < 100 then
     event = capabilities.contactSensor.contact.open()
   end
   if event ~= nil then
