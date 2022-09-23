@@ -1,3 +1,5 @@
+## Modified by AH to increase garage door "open" threshold to +/-500
+
 ## SmartThings Multipurpose Sensor-Pref: Modified fron original Driver to add settings with preferences for custom Temperature Reports
   ## Modified by Mariano Colmenarejo with help of Nayely Zarazua (SmartThings)
 
